@@ -53,17 +53,6 @@ const handleSubmit = async(e)=>{
       alert("Sign up successfull")
         navigate("/")
    
-    //  await getUserData()
-
-      // if(userData){
-
-      //   navigate("/home")
-      // }
-     
-          // console.log(data.user);
-          
-
-        
     } catch (error) {
       console.log(error);
       
@@ -88,11 +77,11 @@ const handleImage = (e)=>{
       <div className="card shadow p-4" style={{ width: '100%', maxWidth: '400px' }}>
         <h2 className="text-center mb-4">Sign Up</h2>
         <form className="d-grid gap-3" onSubmit={handleSubmit}>
-          <input type="text" className="form-control" name='name' value={input.name} onChange={handler} placeholder="Name" required />
-          <input type="text" className="form-control" name='userName' value={input.userName} onChange={handler} placeholder="Username" required />
-          <input type="number" className="form-control" name='age' value={input.age} onChange={handler} placeholder="Age" required />
-          <input type="email" className="form-control" name='email' value={input.email} onChange={handler} placeholder="Email" required />
-          <input type="password" className="form-control mb-2" name='password' value={input.password}  onChange={handler} placeholder="Password" required/>
+          <input type="text" className="form-control" name='name' value={input.name} onChange={handler} placeholder="Name"  />
+          <input type="text" className="form-control" name='userName' value={input.userName} onChange={handler} placeholder="Username"  />
+          <input type="number" className="form-control" name='age' value={input.age} onChange={handler} placeholder="Age"  />
+          <input type="email" className="form-control" name='email' value={input.email} onChange={handler} placeholder="Email"  />
+          <input type="password" className="form-control mb-2" name='password' value={input.password}  onChange={handler} placeholder="Password" />
           <label htmlFor="imageUpload" className="form-label ps-2"><h6>Upload your image</h6></label>
           <input type="file" className="form-control" id="imageUpload" onChange={handleImage} required />
           <button type="submit" className="btn btn-primary ">Sign Up</button>

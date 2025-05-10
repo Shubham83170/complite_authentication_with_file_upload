@@ -18,7 +18,7 @@ const UserContext = ({ children }) => {
           setUserData(data)
         } catch (error) {
             navigate("/login")
-        //   alert(error.response.data.message)
+       
             console.log(error);
             
         }finally {

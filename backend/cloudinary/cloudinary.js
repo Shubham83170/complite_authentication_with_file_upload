@@ -14,13 +14,13 @@ const uploadOnCloudinary = async(filePath)=>{
         }
 
         let result = await cloudinary.uploader.upload(filePath)
-        console.log(result);
+        // console.log(result);
         fs.unlinkSync(filePath)
         return result.secure_url
         
     } catch (error) {
         fs.unlinkSync(filePath)
-        console.log(error);
+        // console.log(error);
         
         
     }

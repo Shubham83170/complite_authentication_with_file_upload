@@ -60,8 +60,8 @@ const Login = () => {
           <h2 className="text-center mb-4">Log In</h2>
           <form className="d-grid gap-3" onSubmit={handleSubmit}>
 
-            <input type="email" className="form-control" name='email' value={logData.email} onChange={handler} placeholder="Email" required />
-            <input type="password" className="form-control mb-2" name='password' value={logData.password} onChange={handler} placeholder="Password" required />
+            <input type="email" className="form-control" name='email' value={logData.email} onChange={handler} placeholder="Email"  />
+            <input type="password" className="form-control mb-2" name='password' value={logData.password} onChange={handler} placeholder="Password" />
 
             <button type="submit" className="btn btn-primary ">Log In</button>
             <p className='mt-3 text-center' onClick={()=>navigate("/signup")}>Want to create new account ? <Link className='text-primary'>Sign Up</Link></p>
